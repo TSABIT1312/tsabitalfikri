@@ -20,11 +20,8 @@ export function Nav() {
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       className="fixed inset-x-0 top-4 z-50 flex justify-center px-4"
     >
-      <nav
-        className={`glass flex items-center gap-1 rounded-full px-2 py-2 transition-all ${
-          scrolled ? "shadow-[0_8px_24px_-16px_rgba(255,167,64,0.28)]" : ""
-        }`}
-      >
+      <nav className="glass flex items-center gap-1 rounded-full px-2 py-2">
+
         <a
           href="#top"
           className="flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-semibold tracking-tight"

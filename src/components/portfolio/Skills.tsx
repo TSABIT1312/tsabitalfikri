@@ -40,7 +40,7 @@ export function Skills() {
               transition={{ duration: 0.5, delay: i * 0.08 }}
               className="grid gap-4 py-7 sm:grid-cols-[180px_1fr] sm:items-center"
             >
-              <h3 className="font-display text-lg font-semibold">{g.title}</h3>
+              <h3 className="text-lg font-semibold">{g.title}</h3>
               <ul className="flex flex-wrap gap-2">
                 {g.items.map((s) => (
                   <li

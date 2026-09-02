@@ -32,7 +32,7 @@ export function About() {
             <div className="mt-10 grid grid-cols-3 gap-4">
               {stats.map((s) => (
                 <div key={s.v} className="rounded-2xl border border-border bg-secondary/30 px-4 py-5">
-                  <div className="font-display text-2xl font-semibold text-foreground">{s.k}</div>
+                  <div className="text-2xl font-semibold text-foreground">{s.k}</div>
                   <div className="mt-1 text-xs text-muted-foreground">{s.v}</div>
                 </div>
               ))}

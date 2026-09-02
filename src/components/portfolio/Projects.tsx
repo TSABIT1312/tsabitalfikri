@@ -122,7 +122,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         <img
           src={project.image}
           alt={project.imageAlt}
-          className="h-full w-full object-cover object-top transition duration-700 group-hover:scale-[1.03]"
+          className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-[1.01]"
           loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/10 to-transparent" />
@@ -135,7 +135,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             <span className="font-mono">{project.year}</span>
             <span className="font-mono">{new URL(project.url).host.replace("www.", "")}</span>
           </div>
-          <h3 className="font-display mt-2 text-xl font-semibold">{project.tagline}</h3>
+          <h3 className="mt-2 text-xl font-semibold">{project.tagline}</h3>
         </div>
         <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-border bg-card/60 transition group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground">
           <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-12" />
