@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { WaveText } from "@/components/portfolio/WaveText";
 import { Mail, Github, Linkedin, Instagram, Send, CheckCircle2 } from "lucide-react";
 
 const EMAIL = "sabitalfikri@gmail.com";

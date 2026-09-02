@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { WaveText } from "@/components/portfolio/WaveText";
 
 const groups = [
   {
@@ -26,7 +27,7 @@ export function Skills() {
           transition={{ duration: 0.6 }}
           className="max-w-2xl text-4xl font-semibold tracking-tight sm:text-5xl"
         >
-          A toolkit chosen for <span className="italic">clarity</span> and speed.
+          A toolkit chosen for clarity and speed.
         </motion.h2>
 
         <div className="mt-14 divide-y divide-border border-y border-border">

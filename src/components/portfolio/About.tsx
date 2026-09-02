@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Palette, Code2 } from "lucide-react";
+import { WaveText } from "@/components/portfolio/WaveText";
 
 const stats = [
   { k: "5", v: "Live products shipped" },
@@ -19,17 +20,13 @@ export function About() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-              I sweat the details other people skip.
+              <WaveText text="I sweat the details other people skip." />
             </h2>
             <p className="mt-6 text-muted-foreground">
-              I'm an Informatics student at UIN Prof. K.H. Saifuddin Zuhri Purwokerto, working at the
-              intersection of design and engineering. I like problems that need both a strong system
-              and a soft touch: brand-driven landing pages, product surfaces, and small tools that
-              feel effortless.
+              I'm an Informatics student at UIN Prof. K.H. Saifuddin Zuhri Purwokerto, working at the intersection of design and engineering. I like problems that need both a strong system and a soft touch: brand-driven landing pages, product surfaces, and small tools that feel effortless.
             </p>
             <p className="mt-4 text-muted-foreground">
-              My workflow leans on Figma for exploration and modern React stacks for delivery. I
-              obsess over spacing, motion timing, and copy that respects the reader.
+              My workflow leans on Figma for exploration and modern React stacks for delivery. I obsess over spacing, motion timing, and copy that respects the reader.
             </p>
 
             <div className="mt-10 grid grid-cols-3 gap-4">

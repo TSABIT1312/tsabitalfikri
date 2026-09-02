@@ -22,7 +22,7 @@ export function Nav() {
     >
       <nav
         className={`glass flex items-center gap-1 rounded-full px-2 py-2 transition-all ${
-          scrolled ? "glow-ring" : ""
+          scrolled ? "shadow-[0_8px_24px_-16px_rgba(255,167,64,0.28)]" : ""
         }`}
       >
         <a
@@ -51,7 +51,7 @@ export function Nav() {
         </ul>
         <a
           href="#contact"
-          className="ml-1 rounded-full bg-primary px-4 py-1.5 text-sm font-medium text-primary-foreground transition hover:brightness-110"
+          className="ml-1 rounded-full bg-primary/90 px-4 py-1.5 text-sm font-medium text-primary-foreground transition hover:bg-primary hover:brightness-95"
         >
           Let's talk
         </a>

@@ -1,10 +1,19 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
+import { WaveText } from "@/components/portfolio/WaveText";
+
+const heroTitle = "I design interfaces, then I build them myself.";
+
+const staticHeroText =
+  "I'm Muhammad Tsabit Alfikri, an Informatics student in Purwokerto. I design in Figma and ship real products in React.";
 
 export function Hero() {
+  const { scrollYProgress } = useScroll();
+  const y = useTransform(scrollYProgress, [0, 1], [0, 40]);
+
   return (
     <section id="top" className="relative flex min-h-[100dvh] items-center overflow-hidden pt-24">
-      <div className="grid-bg absolute inset-0 -z-10" />
+      <motion.div style={{ y }} className="grid-bg absolute inset-0 -z-10" />
 
       <div className="mx-auto w-full max-w-6xl px-6">
         <motion.div
@@ -23,7 +32,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
           className="mt-6 max-w-3xl text-5xl font-semibold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl"
         >
-          I design interfaces, then I build them myself.
+          <WaveText text={heroTitle} />
         </motion.h1>
 
         <motion.p
@@ -32,8 +41,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="mt-6 max-w-xl text-base text-muted-foreground sm:text-lg"
         >
-          I'm Muhammad Tsabit Alfikri, an Informatics student in Purwokerto. I design in Figma
-          and ship real products in React.
+          <WaveText text={staticHeroText} />
         </motion.p>
 
         <motion.div
